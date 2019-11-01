@@ -3,7 +3,6 @@ import './MapPharmacy.css';
 
 import {Gmaps, Marker} from 'react-gmaps';
 
-//const API_KEY = 'AIzaSyDXSZMonTLSaMlEN7kyP_fLkHSsm6C1o2U'
 const params = {v: '3.exp'};
 
 const coords = {
