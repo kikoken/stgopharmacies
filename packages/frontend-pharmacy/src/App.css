@@ -1,0 +1,60 @@
+@import url("./reset.css");
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  justify-items: center;
+  padding: 24px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading {
+  box-sizing: border-box;
+  color: lightblue;
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.Drugstore-app {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 36px;
+  width: 400px;
+}
+
+.Drugstore-search {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+}
+
+.Drugstore-search h1 {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.Drugstore-search button {
+  border: none;
+  box-sizing: border-box;
+  color: #305F72;
+  display: block;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+
+
+
+
+

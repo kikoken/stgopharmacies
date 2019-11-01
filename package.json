@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "name": "stgofarmacias",
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
+}
