@@ -5,5 +5,13 @@ services:
     build: ./packages/service-pharmacy
     container_name: api-pharmacy
     restart: always
-    expose:
-      - 5000:3000
+    ports:
+      - "5000:3000"
+    env_file:
+      - ./packages/service-pharmacy/.env
+  proxy:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - api-pharmacy
