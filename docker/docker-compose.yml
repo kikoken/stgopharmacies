@@ -2,15 +2,16 @@ version: '3.1'
 
 services:
   api-pharmacy:
-    build: ./packages/service-pharmacy
+    build: ./api-pharmacy
     container_name: api-pharmacy
     restart: always
     ports:
       - "5000:3000"
     env_file:
-      - ./packages/service-pharmacy/.env
+      - ./api-pharmacy/.env
   proxy:
     image: nginx:latest
+    container_name: proxy
     ports:
       - "80:80"
     depends_on:
