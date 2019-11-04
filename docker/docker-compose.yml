@@ -10,8 +10,9 @@ services:
     env_file:
       - ./api-pharmacy/.env
   proxy:
-    image: nginx:latest
+    build: ./proxy
     container_name: proxy
+    restart: always
     ports:
       - "80:80"
     depends_on:
