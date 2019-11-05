@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 import config from './config';
+import logger from '../logger';
 
 // Routes
 import {
@@ -20,7 +21,7 @@ app.use(bodyParser.json());
 app.use('/', CountyRoute);
 
 app.server = app.listen(config.PORT, () => {
-    console.log(`[COUNTIES] API running in port ${config.PORT}`);
+    logger.debug(`[COUNTIES] API running in port ${config.PORT}`);
 });
 
 export default app;
