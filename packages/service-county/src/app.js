@@ -7,7 +7,7 @@ import config from './config';
 
 // Routes
 import {
-    PharmacieRoute
+    CountyRoute
 } from './api';
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());
 
-app.use('/', PharmacieRoute);
+app.use('/', CountyRoute);
 
 app.server = app.listen(config.PORT, () => {
     console.log(`[COUNTIES] API running in port ${config.PORT}`);

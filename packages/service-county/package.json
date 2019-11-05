@@ -5,7 +5,7 @@
   "description": "servicio de obtención de comunas de la region metropolitana",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -x babel-node -r node_modules/dotenv/config src/app.js ",
+    "start": "nodemon -x babel-node -r ../../node_modules/dotenv/config src/app.js ",
     "build": "npm run clean && babel src --out-dir dist",
     "clean": "rimraf -rf dist",
     "copy": "cp -r ./dist ../../docker/api-county && cp ./package.json ../../docker/api-county && cp .env ../../docker/api-county"
