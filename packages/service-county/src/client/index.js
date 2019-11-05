@@ -2,9 +2,10 @@ import axios from './instance';
 import config from '../config';
 
 const makeAPiAdapter = client => ({
-  get: async () => {
-    let params = `?id_region=${config.REGION_ID}`;
-    const { data } = await client.get(params);
+  post: async (reg_id) => {
+    const { data } = await client.post('/maps_obtener_comunas_por_regiones',{
+      reg_id
+    });
     return data;
   }
 });
