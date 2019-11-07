@@ -57,5 +57,6 @@ jspm_packages/
 # dotenv environment variables file
 .env
 .env.test
+.ssl/
 # Serverless directories
 .serverless/

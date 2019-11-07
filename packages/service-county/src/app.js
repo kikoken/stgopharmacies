@@ -4,7 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 import config from './config';
-import logger from '../logger';
+import logger from './logger';
 
 // Routes
 import {

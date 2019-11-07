@@ -10,7 +10,7 @@ router.get('/counties/stgo', async (req, res) => {
     let response = await repository.counties.getCounties(config.REGION_ID);
     return res.status(200).send({...response});
   } catch (error) {
-    logger.debug(e);
+    logger.debug(error);
     res.status(400).send({error: error});
   }
 });
